@@ -45,7 +45,7 @@ const SellingPage = () => {
   return (
     <div
       // style={{backgroundImage:`url('public/mirchiTypes/spice-smoked-paprika-form-powder-bowls-spoons_73989-34358.jpg')`}}
-      className="bg-gray-200 bg-cover bg-center mt-20">
+      className="bg-gray-200 w-full mt-20">
       {/* Header Section */}
       <header
         style={{ backgroundImage: `url('public/mirchiTypes/red-chili-peppers-black-stone-background_1286611-2027.jpg')` }}
@@ -59,7 +59,7 @@ const SellingPage = () => {
       {/* Form Section */}
       <section
         style={{ backgroundImage: `url('public/assets/chilli-red-pepper-flakes-chilli-powder-burst_662214-388440.jpg')` }}
-        className="container mt-12 bg-cover bg-center flex justify-between mx-auto px-6 py-10 bg-white rounded-lg shadow-lg">
+        className=" mt-12 bg-cover bg-center flex justify-between px-6 py-10 bg-white rounded-lg shadow-lg">
         <div className='flex-1 w-3/5'>
           <h2 className="text-3xl font-semibold text-center text-white mb-6">Why Sell with Us?</h2>
           <div className="flex flex-col items-center justify-center gap-6">
@@ -178,7 +178,7 @@ const SellingPage = () => {
       </section>
 
       {/* Steps to Sell Section */}
-      <section className="bg-red-200 container mx-auto px-6 py-10">
+      <section className="bg-red-200 mx-auto px-6 py-10">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">How It Works</h2>
         <div className="flex gap-6 justify-center">
           <div className="bg-white p-6 rounded-lg shadow-lg w-2/3 text-center">
@@ -197,7 +197,7 @@ const SellingPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="container mx-auto px-6 py-10 bg-gray-50">
+      <section className="mx-auto px-6 py-10 bg-gray-50">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">Frequently Asked Questions</h2>
         <div className="flex flex-col gap-6">
           <div className="bg-white p-4 rounded-lg shadow-lg">
