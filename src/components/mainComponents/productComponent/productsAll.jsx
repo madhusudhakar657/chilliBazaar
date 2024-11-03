@@ -15,7 +15,7 @@ const Products = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="min-h-screen mt-24">
+    <div className="min-h-screen bg-red-100 pt-16 mt-20">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-red-600 text-center mb-10">Explore Our Chili Varieties</h1>
         

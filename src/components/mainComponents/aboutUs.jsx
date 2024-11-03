@@ -28,7 +28,7 @@ const AboutUs = () => {
         {/* Image Section */}
         <div className="lg:w-1/2 mt-10 lg:mt-0 flex items-center justify-center">
           <img
-            src="/assets/chilli-red-pepper-flakes-chilli-powder-burst_662214-388440.jpg"
+            src="public/assets/chilli-red-pepper-flakes-chilli-powder-burst_662214-388440.jpg"
             alt="Dried Red Chilies"
             className="rounded-lg shadow-lg w-full md:w-3/4 lg:w-full"
           />
