@@ -45,11 +45,11 @@ const SellingPage = () => {
   return (
     <div
       // style={{backgroundImage:`url('""mirchiTypes/spice-smoked-paprika-form-powder-bowls-spoons_73989-34358.jpg')`}}
-      className="bg-gray-200 w-full mt-20">
+      className="bg-gray-200 max-w-screen w-screen mt-20">
       {/* Header Section */}
       <header
         style={{ backgroundImage: `url('mirchiTypes/red-chili-peppers-black-stone-background_1286611-2027.jpg')` }}
-        className=" bg-cover bg-bottom text-center bg-red-600 b text-white top-0 py-12">
+        className=" bg-cover bg-bottom text-center bg-red-600 text-white py-12">
         <h1 className="text-4xl font-bold">Sell Your Chilies with Us!</h1>
         <p className="mt-4 text-lg">Join a vast network of buyers and grow your business with confidence.</p>
       </header>
@@ -59,28 +59,28 @@ const SellingPage = () => {
       {/* Form Section */}
       <section
         style={{ backgroundImage: `url('assets/chilli-red-pepper-flakes-chilli-powder-burst_662214-388440.jpg')` }}
-        className=" mt-12 bg-cover bg-center flex justify-between px-6 py-10 bg-white rounded-lg shadow-lg">
-        <div className='flex-1 w-3/5'>
+        className="max-w-screen w-screen w-full mt-12 bg-cover bg-center flex justify-between xs:flex-col px-6 py-10 bg-white rounded-lg shadow-lg">
+        <div className='flex flex-col pr-16 xs:w-screen w-3/5'>
           <h2 className="text-3xl font-semibold text-center text-white mb-6">Why Sell with Us?</h2>
           <div className="flex flex-col items-center justify-center gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-lg w-2/3 text-center">
+            <div className="bg-white p-6 rounded-lg shadow-lg xs:w-full w-4/5 text-center">
               <h3 className="text-xl font-semibold text-red-600 mb-3">Wide Market Access</h3>
               <p>Access thousands of buyers worldwide and expand your business beyond local markets.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg w-2/3 text-center">
+            <div className="bg-white p-6 rounded-lg shadow-lg xs:w-full w-4/5 text-center">
               <h3 className="text-xl font-semibold text-red-600 mb-3">Fair Pricing</h3>
               <p>Set your own price and negotiate directly with buyers for a fair and profitable sale.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg w-2/3 text-center">
+            <div className="bg-white p-6 rounded-lg shadow-lg xs:w-full w-4/5 text-center">
               <h3 className="text-xl font-semibold text-red-600 mb-3">Safe Transactions</h3>
               <p>Our secure platform ensures safe transactions and payment protection for peace of mind.</p>
             </div>
           </div>
         </div>
-        <div className='flex-1 w-3/5'>
+        <div className='flex flex-col xs:w-full w-3/5 xs:mt-10 pr-16'>
           <h2 className="text-3xl font-semibold text-center text-white mb-6">Sell Your Mirchi </h2>
           <form onSubmit={handleSubmit} className="">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 xs:grid-cols-1 xs:w-full gap-4">
               <input
                 type="text"
                 name="name"
@@ -96,7 +96,7 @@ const SellingPage = () => {
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className=" p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
+                className="xs:w-full p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
 
                 required
               />
@@ -180,16 +180,16 @@ const SellingPage = () => {
       {/* Steps to Sell Section */}
       <section className="bg-red-200 mx-auto px-6 py-10">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">How It Works</h2>
-        <div className="flex gap-6 justify-center">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-2/3 text-center">
+        <div className="flex xs:flex-col xs:w-fit gap-6 justify-center">
+          <div className="bg-white p-6 rounded-lg shadow-lg xs:w-full w-2/3 text-center">
             <h3 className="text-xl font-semibold text-red-600 mb-2">1. Create an Account</h3>
             <p>Sign up and verify your account to start selling on our platform.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg w-2/3 text-center">
+          <div className="bg-white p-6 rounded-lg shadow-lg xs:w-full w-2/3 text-center">
             <h3 className="text-xl font-semibold text-red-600 mb-2">2. List Your Chili</h3>
             <p>Provide details about your chili, including quantity, price, and quality.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg w-2/3 text-center">
+          <div className="bg-white p-6 rounded-lg shadow-lg xs:w-full w-2/3 text-center">
             <h3 className="text-xl font-semibold text-red-600 mb-2">3. Connect with Buyers</h3>
             <p>Communicate and finalize deals directly with buyers interested in your produce.</p>
           </div>

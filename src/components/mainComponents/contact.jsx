@@ -4,7 +4,7 @@ const ContactPage = () => {
   return (
     <div 
     style={{backgroundImage:`url('assets/copy-space-chilli-peper_23-2148601208.jpg')`}}
-    className="w-screen bg-cover bg-center h-screen pt-24 bg-none">
+    className="w-screen bg-cover bg-center min-h-screen pt-24 xs:py-10 xs:mt-10 bg-none">
       <h2 className="text-4xl font-bold text-center text-white my-8">Contact Us</h2>
       <div className="px-12 grid lg:grid-cols-2 gap-5">
         {/* Contact Information */}
@@ -36,7 +36,7 @@ const ContactPage = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="p-6 w-full  ml-3 bg-white rounded-lg shadow-lg">
+        <div className="p-6 w-full ml-3 xs:ml-0 bg-white rounded-lg shadow-lg">
           <h3 className="text-2xl font-semibold mb-4">Contact Form</h3>
           <form className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

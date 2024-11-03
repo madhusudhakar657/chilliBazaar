@@ -55,7 +55,7 @@ const SuppliersPage = () => {
 
       {/* Popular Mirchi Varieties Section */}
       <section 
-      className="container bg-red-200 mt-12 mx-auto px-8 py-8">
+      className="bg-red-200 mt-12 mx-auto px-8 py-8">
         <h2 className="text-2xl font-semibold text-gray-800 mb-6">Popular Mirchi Varieties by State</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {popularMirchiVarieties?.map((mirchi) => (
@@ -65,7 +65,7 @@ const SuppliersPage = () => {
       </section>
 
       {/* All Varieties by State Section */}
-      <section className="container mx-auto px-8 py-8">
+      <section className="mx-auto px-8 py-8">
         <h2 className="text-2xl font-semibold text-center before: text-gray-800 mb-6">All Varieties by State</h2>
         {allVarietiesByState.map((stateData) => (
           <div key={stateData.state} className="mb-8">

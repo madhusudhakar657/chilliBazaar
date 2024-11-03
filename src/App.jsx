@@ -1,11 +1,11 @@
 
 import Header from "./components/semanticComponents/header";
-
-import './App.css'
 import Layout from "./components/mainComponents/layout";
 import { HashRouter as Router } from "react-router-dom";
 import FooterContent from "./components/semanticComponents/footer";
 import { useEffect } from "react";
+import './App.css'
+
 
 
 function App() {
@@ -13,15 +13,15 @@ function App() {
 
 
   return (
-    <div className='bg-gray-300 max-w-screen'>
+    <div className='bg-gray-300 w-screen'>
       <Router>
         <header className="flex justify-center z-10 items-center">
           <Header />
         </header>
-        <main className="max-w-screen z-n1">
+        <main className="w-full">
           <Layout />
         </main>
-        <footer className="bg-gray-800 home-footer w-screen h-full text-gray-50">
+        <footer className="xs:text-xl bg-gray-800 home-footer h-full pl-6 text-gray-50">
           <FooterContent />
         </footer>
       </Router>

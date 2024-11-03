@@ -10,12 +10,12 @@ const HomePage = () => {
     <div className="font-sans">
       {/* Hero Banner */}
       <section
-        className="w-screen bg-cover bg-center h-screen flex flex-col items-center justify-center z-1"
+        className="w-full bg-cover bg-center h-full flex flex-col items-center justify-center z-1 py-10"
         style={{ backgroundImage: `url('assets/top-view-indian-seasonings-dried-peppers-table.jpg` }}
       >
-        <div className="bg-black border border-gray-600 bg-opacity-60 mt-20 p-10 rounded-lg text-center animate-fadeIn">
-          <h1 className="font-bold z-1 text-white mb-4">Welcome to <strong className='text-red-600'> Chilli Bazaar</strong></h1>
-          <h3 className="text-4xl font-bold text-white mb-6">
+        <div className="bg-black border border-gray-600 bg-opacity-60 mt-20 xs:mt-24 xs:p-auto  p-10 rounded-lg text-center animate-fadeIn">
+          <h1 className="font-bold z-1 xs:text-3xl text-white mb-4">Welcome to <strong className='text-red-600'> Chilli Bazaar</strong></h1>
+          <h3 className="text-4xl xs:text-2xl font-bold text-white mb-6">
             Premium Dried <strong className='text-red-600'>Red Chilies</strong> Delivered to Your Doorstep
           </h3>
           <p className="text-lg text-gray-100 leading-relaxed">
@@ -31,8 +31,8 @@ const HomePage = () => {
           </Link>
 
         </div>
-        <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-x-28">
-          <div className="w-vw bg-red-600 text-white p-8 rounded-lg text-center hover:bg-red-700 ">
+        <section className="mt-16 grid grid-cols-2 xs:grid-cols-1 gap-x-28">
+          <div className=" xs:m-4 bg-red-600 text-white p-8 rounded-lg text-center hover:bg-red-700 ">
             <h3 className="text-2xl font-semibold mb-3">Selling Dried Chilies?</h3>
             <p>Join us to sell your high-quality dried chilies directly to buyers worldwide.</p>
             <Link to="/selling">
@@ -41,7 +41,7 @@ const HomePage = () => {
               </button>
             </Link>
           </div>
-          <div className="w-vw bg-green-600 text-white p-8 rounded-lg text-center hover:bg-green-700 ">
+          <div className=" xs:m-4 bg-green-600 text-white p-8 rounded-lg text-center hover:bg-green-700 ">
             <h3 className="text-2xl font-semibold mb-3">Looking to Buy?</h3>
             <p>Explore a wide variety of dried chilies from trusted sources at the best prices.</p>
             <Link to="/products">
@@ -55,8 +55,7 @@ const HomePage = () => {
       </section>
 
       {/* Introduction Section */}
-      <main className=" w-screen mt-12">
-
+      <main className="w-screen mt-12">
         {/* <section style={{ backgroundImage: `url('""assets/red-chili-peppers-black-stone-background_1286611-2027.jpg')` }}
           className="bg-cover bg-bottom w-full py-8 mb-12">
           <h3 className="text-3xl font-bold text-white mb-6 text-center">Daily Mirchi Prices</h3>
@@ -76,35 +75,37 @@ const HomePage = () => {
             </div>
         </section> */}
         <section style={{ backgroundImage: `url('assets/spice-smoked-paprika-form-powder-bowls-spoons_73989-34358.jpg')` }}
-          className="bg-cover bg-center bg-bottom w-full px-16 py-8 mb-12">
-          <h3 className="text-4xl font-bold text-white pt-4 mb-6 text-center">Popular <strong className='text-red-600'>Dry Chilli</strong> Varieties Across India</h3>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6 animate-slideLeft">
+          className="bg-cover bg-center bg-bottom w-full xs:px-4 sm:px-6 px-16 py-8 mb-12">
+          <h3 className="text-4xl xs:text-xl font-bold text-white pt-4 mb-6 text-center">Popular <strong className='text-red-600'>Dry Chilli</strong> Varieties Across India</h3>
+          <div className="grid  xs:grid-cols-1 grid-cols-3 gap-6">
             {chilliTypes?.map(eachType => {
 
-              return (<div key={eachType?.name} className=" bg-white min-w-full shadow-lg ml-0 rounded-lg">
+              return (<div key={eachType?.name} className="xs:w-full bg-white max-w-full shadow-lg ml-0 rounded-lg">
                 <img
                   src={eachType?.image}
                   alt={eachType?.name}
                   className="h-52 w-full p-0 object-cover rounded-lg mb-4"
                 />
-                <div className='p-4'>
-                  <div className='flex justify-between items-center'>
-                    <h4 className="text-2xl text-start font-semibold text-red-600">{eachType?.name}</h4>
-                    <div className='flex'>
-                      <span className='mt-1 mr-1'><FaMapMarker /></span>
-                      <p className='w-auto'>{eachType?.location.split(",")[0]}</p>
+                <div className='px-6 py-4'>
+                  <div className='h-52'>
+                    <div className='flex justify-between items-center'>
+                      <span className="text-start font-semibold text-red-600">{eachType?.name}</span>
+                      <div className='flex'>
+                        <span className='mt-1 mr-1'><FaMapMarker /></span>
+                        <p className='w-auto'>{eachType?.location.split(",")[0]}</p>
+                      </div>
+                    </div>
+
+                    <p className="text-gray-900 h-24 text-sm py-4">
+                      {eachType?.description}
+                    </p>
+                    <div className='flex flex-col gap-2 justify-around'>
+                      <p className='w-auto font-semibold text-orange-800'>Min-Price: <span className='font-semibold text-lg font-sans text-black'>Rs 100/kg</span></p>
+                      <p className='w-auto font-semibold text-green-800'>Max-Price: <span className=' font-semibold text-lg font-sans text-black'>Rs 200/kg</span></p>
+
                     </div>
                   </div>
-
-                  <p className="text-gray-900 h-24 text-sm py-4">
-                    {eachType?.description}
-                  </p>
-                  <div className='flex justify-around'>
-                    <p className='w-auto font-semibold text-orange-800'>Min-Price: <span className='font-semibold text-lg font-sans text-black'>Rs 100/kg</span></p>
-                    <p className='w-auto font-semibold text-green-800'>Max-Price: <span className=' font-semibold text-lg font-sans text-black'>Rs 200/kg</span></p>
-
-                  </div>
-                  <div className='flex justify-around my-5'>
+                  <div className='flex justify-around my-4 gap-x-10'>
                     <button
                       className="bg-white py-2 text-lg border-2 border-red-600 text-red-600 px-6 my-2 rounded hover:bg-orange-600 hover:border-none hover:text-white"
                     >Add to Cart

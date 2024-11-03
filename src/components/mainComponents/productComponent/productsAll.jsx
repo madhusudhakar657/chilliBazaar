@@ -20,7 +20,7 @@ const Products = () => {
         <h1 className="text-3xl md:text-4xl font-bold text-red-600 text-center mb-10">Explore Our Chili Varieties</h1>
         
         {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xs:mx-4 sm:mx-4">
           {products.map((product) => (
             <Link to={`/products/${product.id}`} key={product.id} className="block bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
               <h2 className="text-2xl font-bold text-gray-800">{product.name}</h2>
