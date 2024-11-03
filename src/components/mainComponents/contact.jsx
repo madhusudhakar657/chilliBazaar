@@ -3,7 +3,7 @@ import React from 'react';
 const ContactPage = () => {
   return (
     <div 
-    style={{backgroundImage:`url('public/assets/copy-space-chilli-peper_23-2148601208.jpg')`}}
+    style={{backgroundImage:`url('assets/copy-space-chilli-peper_23-2148601208.jpg')`}}
     className="w-screen bg-cover bg-center h-screen pt-24 bg-none">
       <h2 className="text-4xl font-bold text-center text-white my-8">Contact Us</h2>
       <div className="px-12 grid lg:grid-cols-2 gap-5">

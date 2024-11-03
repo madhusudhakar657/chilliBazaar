@@ -11,7 +11,7 @@ const HomePage = () => {
       {/* Hero Banner */}
       <section
         className="w-screen bg-cover bg-center h-screen flex flex-col items-center justify-center z-1"
-        style={{ backgroundImage: `url('public/assets/top-view-indian-seasonings-dried-peppers-table.jpg` }}
+        style={{ backgroundImage: `url('assets/top-view-indian-seasonings-dried-peppers-table.jpg` }}
       >
         <div className="bg-black border border-gray-600 bg-opacity-60 mt-20 p-10 rounded-lg text-center animate-fadeIn">
           <h1 className="font-bold z-1 text-white mb-4">Welcome to <strong className='text-red-600'> Chilli Bazaar</strong></h1>
@@ -57,7 +57,7 @@ const HomePage = () => {
       {/* Introduction Section */}
       <main className=" w-screen mt-12">
 
-        {/* <section style={{ backgroundImage: `url('public/assets/red-chili-peppers-black-stone-background_1286611-2027.jpg')` }}
+        {/* <section style={{ backgroundImage: `url('""assets/red-chili-peppers-black-stone-background_1286611-2027.jpg')` }}
           className="bg-cover bg-bottom w-full py-8 mb-12">
           <h3 className="text-3xl font-bold text-white mb-6 text-center">Daily Mirchi Prices</h3>
           
@@ -75,7 +75,7 @@ const HomePage = () => {
               }
             </div>
         </section> */}
-        <section style={{ backgroundImage: `url('public/assets/spice-smoked-paprika-form-powder-bowls-spoons_73989-34358.jpg')` }}
+        <section style={{ backgroundImage: `url('assets/spice-smoked-paprika-form-powder-bowls-spoons_73989-34358.jpg')` }}
           className="bg-cover bg-center bg-bottom w-full px-16 py-8 mb-12">
           <h3 className="text-4xl font-bold text-white pt-4 mb-6 text-center">Popular <strong className='text-red-600'>Dry Chilli</strong> Varieties Across India</h3>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6 animate-slideLeft">

@@ -46,7 +46,7 @@ const SuppliersPage = () => {
     >
       {/* Header */}
       <header 
-       style={{backgroundImage:`url('/mirchiTypes/vintage-pepper-illustration-food-restaurant-theme-generative-ai_804788-187844.jpg')`}}
+       style={{backgroundImage:`url('mirchiTypes/vintage-pepper-illustration-food-restaurant-theme-generative-ai_804788-187844.jpg')`}}
 
       className="bg-red-600 bg-cover bg-center text-white py-8 text-center">
         <h1 className="text-3xl font-bold">Suppliers Across India</h1>

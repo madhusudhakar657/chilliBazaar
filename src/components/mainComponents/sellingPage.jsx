@@ -44,11 +44,11 @@ const SellingPage = () => {
 
   return (
     <div
-      // style={{backgroundImage:`url('public/mirchiTypes/spice-smoked-paprika-form-powder-bowls-spoons_73989-34358.jpg')`}}
+      // style={{backgroundImage:`url('""mirchiTypes/spice-smoked-paprika-form-powder-bowls-spoons_73989-34358.jpg')`}}
       className="bg-gray-200 w-full mt-20">
       {/* Header Section */}
       <header
-        style={{ backgroundImage: `url('public/mirchiTypes/red-chili-peppers-black-stone-background_1286611-2027.jpg')` }}
+        style={{ backgroundImage: `url('mirchiTypes/red-chili-peppers-black-stone-background_1286611-2027.jpg')` }}
         className=" bg-cover bg-bottom text-center bg-red-600 b text-white top-0 py-12">
         <h1 className="text-4xl font-bold">Sell Your Chilies with Us!</h1>
         <p className="mt-4 text-lg">Join a vast network of buyers and grow your business with confidence.</p>
@@ -58,7 +58,7 @@ const SellingPage = () => {
 
       {/* Form Section */}
       <section
-        style={{ backgroundImage: `url('public/assets/chilli-red-pepper-flakes-chilli-powder-burst_662214-388440.jpg')` }}
+        style={{ backgroundImage: `url('assets/chilli-red-pepper-flakes-chilli-powder-burst_662214-388440.jpg')` }}
         className=" mt-12 bg-cover bg-center flex justify-between px-6 py-10 bg-white rounded-lg shadow-lg">
         <div className='flex-1 w-3/5'>
           <h2 className="text-3xl font-semibold text-center text-white mb-6">Why Sell with Us?</h2>
