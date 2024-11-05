@@ -7,7 +7,8 @@ const cartItemsData = [
     description: "Mildly spicy and known for its vibrant red color, perfect for adding color to dishes.",
     quantity: 2,
     price: 5.99, // price per unit in dollars
-    image: "path_to_image/kashmiri-chili.jpg",
+    image: "https://d3kgrlupo77sg7.cloudfront.net/media/chococoorgspice.com/images/products/semi-dried-kashmir-red-chilli-buy-online.20230215165739.webp",
+
     location: "Kashmir, India",
     spicyLevel: "Mild",
     weight: "100g",
@@ -18,7 +19,7 @@ const cartItemsData = [
     description: "Popular chili variety from Karnataka with a rich red color and medium heat.",
     quantity: 1,
     price: 3.49,
-    image: "path_to_image/byadagi-chili.jpg",
+    image: "mirchiTypes/byadigiMirchiImg-11.webp",
     location: "Karnataka, India",
     spicyLevel: "Medium",
     weight: "50g",
@@ -29,7 +30,7 @@ const cartItemsData = [
     description: "Highly spicy chili variety from Andhra Pradesh, known for its pungency.",
     quantity: 3,
     price: 4.99,
-    image: "path_to_image/guntur-chili.jpg",
+    image: "mirchiTypes/gunturSannam.jpg",
     location: "Andhra Pradesh, India",
     spicyLevel: "Hot",
     weight: "100g",
@@ -40,7 +41,7 @@ const cartItemsData = [
     description: "Small but intensely hot chili, commonly used in Thai and other Asian cuisines.",
     quantity: 1,
     price: 6.99,
-    image: "path_to_image/birds-eye-chili.jpg",
+    image: "mirchiTypes/bird-eye-chilli-500x500.webp",
     location: "Northeast India",
     spicyLevel: "Very Hot",
     weight: "25g",
@@ -49,23 +50,23 @@ const cartItemsData = [
 
 
 const CartPage = () => {
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState(cartItemsData);
   const [totalPrice, setTotalPrice] = useState(0);
 
-  // Fetch cart items on page load
-  useEffect(() => {
-    fetchCartItems();
-  }, []);
+  
+  // useEffect(() => {
+  //   fetchCartItems();
+  // }, []);
 
-  const fetchCartItems = async () => {
-    try {
-      const response = await axios.get('/api/cart'); // Replace with your API endpoint
-      setCartItems(cartItemsData);
-      calculateTotalPrice(cartItemsData);
-    } catch (error) {
-      console.error("Error fetching cart items:", error);
-    }
-  };
+  // const fetchCartItems = async () => {
+  //   try {
+  //     const response = await axios.get('/api/cart'); 
+  //     setCartItems(cartItemsData);
+  //     calculateTotalPrice(cartItemsData);
+  //   } catch (error) {
+  //     console.error("Error fetching cart items:", error);
+  //   }
+  // };
 
   const calculateTotalPrice = (items) => {
     const total = items?.reduce((acc, item) => acc + Number(item.price) * item.quantity, 0);
@@ -102,18 +103,18 @@ const CartPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    <div className="min-h-screen bg-red-200 p-8">
       <h2 className="text-3xl font-bold text-red-600 mb-6">Your Cart</h2>
-      <div className="bg-white shadow-lg rounded-lg p-6">
+      <div className="xs:flex xs:flex-col xs:justify-center xs:items-center bg-white shadow-lg rounded-lg p-8">
         {cartItems?.length === 0 ? (
           <p className="text-gray-700 text-center">Your cart is empty.</p>
         ) : (
           <>
-            <ul>
+            <ul className='space-y-6'>
               {cartItems?.map(item => (
                 <li
                   key={item.id}
-                  className="flex items-center justify-between p-4 border-b border-gray-200"
+                  className="flex xs:flex-col xs:space-y-6 items-center justify-between p-4 border-b border-gray-500"
                 >
                   <div className="flex items-center">
                     <img
@@ -143,7 +144,7 @@ const CartPage = () => {
                     </button>
                     <button
                       onClick={() => removeCartItem(item.id)}
-                      className="text-red-500 hover:text-red-700"
+                      className="text-red-500 border-1 border-gray-300 hover:text-red-700 hover:bg-red-600 hover:text-white hover:border-none"
                     >
                       Remove
                     </button>
@@ -151,7 +152,7 @@ const CartPage = () => {
                 </li>
               ))}
             </ul>
-            <div className="flex justify-between items-center mt-6">
+            <div className="flex xs:flex-col xs:space-y-4  justify-between items-center mt-6">
               <h3 className="text-xl font-bold">Total: ₹{totalPrice.toFixed(2)}</h3>
               <button
                 onClick={handleCheckout}

@@ -28,7 +28,7 @@ export default function HorizontalNavBar({ isMenuOpen, toggleSideNav }) {
       <div className="w-2/5 hidden md:block lg:block  flex justify-evenly items-center app-menu-items">
         <NavLink to="/" className={({ isActive }) => `px-3 mx-1 border-2 border-transparent rounded  py-1 text-lg font-medium font-medium font-serif tracking-normal hover:text-blue-600 hover:border-blue-600 ${isActive ? 'bg-white text-red-600' : "text-white"}`}>Home </NavLink>
         <NavLink to="/aboutUs" className={({ isActive }) => `px-3 mx-1 border-2 border-transparent rounded  py-1 text-lg font-medium font-medium font-serif tracking-normal hover:text-blue-600 hover:border-blue-600 ${isActive ? 'bg-white text-red-600' : "text-white"}`}>About Us</NavLink>
-        <NavLink to="/products" className={({ isActive }) => `px-3 mx-1 border-2 border-transparent rounded  py-1 text-lg font-medium font-medium font-serif tracking-normal hover:text-blue-600 hover:border-blue-600 ${isActive ? 'bg-white text-red-600' : "text-white"}`}>Product </NavLink>
+        <NavLink to="/products" className={({ isActive }) => `w-minflex flex-col px-3 mx-1 border-2 border-transparent rounded  py-1 text-lg font-medium font-medium font-serif tracking-normal hover:text-blue-600 hover:border-blue-600 ${isActive ? 'bg-white text-red-600' : "text-white"}`}>Products</NavLink>
         <NavLink to="/supplier" className={({ isActive }) => `px-3 mx-1 border-2 border-transparent rounded  py-1 text-lg font-medium font-medium font-serif tracking-normal hover:text-blue-600 hover:border-blue-600 ${isActive ? 'bg-white text-red-600' : "text-white"}`}>Suppliers</NavLink>
         <NavLink to="/selling" className={({ isActive }) => `px-3 mx-1 border-2 border-transparent rounded  py-1 text-lg font-medium font-medium font-serif tracking-normal hover:text-blue-600 hover:border-blue-600 ${isActive ? 'bg-white text-red-600' : "text-white"}`}>Selling</NavLink>
         <NavLink to="/contact" className={({ isActive }) => `px-3 mx-1 border-2 border-transparent rounded  py-1 text-lg font-medium font-medium font-serif tracking-normal hover:text-blue-600 hover:border-blue-600 ${isActive ? 'bg-white text-red-600' : "text-white"}`}>Contact</NavLink>
@@ -42,14 +42,14 @@ export default function HorizontalNavBar({ isMenuOpen, toggleSideNav }) {
         <Link to="/login" className='text-white hidden md:block lg:block text-base font-medium font-serif tracking-normal
           hover:text-blue-600'>Login/Register</Link>
 
-        <Link to="/search" className='text-white xs:hidden text-lg font-medium font-sans
+        <Link to="/search" className='text-white mx-2 text-lg font-medium font-sans
           tracking-normal hover:text-blue-600'><FaSearch className='text-xl font-serif' /></Link>
 
         <Link to="/cart" className='text-white sm:ml-1 text-lg font-medium font-sans
           tracking-normal hover:text-blue-600'>
           <div className='flex'>
             <AiOutlineShoppingCart className='text-3xl' />
-            <p className='bg-red-600 text-xs p-0.5 h-5 w-5 text-center relative text-white -top-4 right-4 rounded-full'><strong>{9}</strong></p>
+            <p className='bg-red-600 text-xs p-0.5 h-5 w-5 text-center relative text-white -top-4 right-4 rounded-full'><strong>{4}</strong></p>
             <sub className=' right-5 font-serif text-lg top-1 '>Cart</sub>
           </div>
 

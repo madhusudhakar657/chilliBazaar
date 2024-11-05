@@ -14,7 +14,7 @@ const SideNavBar = ({ closeToggleSideNav, isMenuOpen }) => {
     <div onClick={(e) => e.stopPropagation()} className={`sidenav block md:hidden lg:hidden md:w-1/6 lg:w-1/6 w-1/3  ${isMenuOpen ? 'active' : ''}`}>
       <div className='w-full h-14 bg-red-800'>
         <span className='bg-transparent text-2xl mt-1 pr-1 float-right' onClick={closeToggleSideNav} ><IoCloseSharp /></span>
-        <NavLink to="/home" className={({ isActive }) => `xs:text-base flex justify-center items-center  border-2 xs:pt-5 sm:pt-5 float-left pl-2 border-transparent rounded text-lg font-medium font-medium font-serif tracking-normal hover:text-blue-600 ${!isActive ? 'text-white' : "text-blue-400"}`}><span className='mr-2 text-2xl'><IoMdContact /></span> Profile </NavLink>
+        <NavLink to="/login" className={({ isActive }) => `xs:text-base flex justify-center items-center  border-2 xs:pt-5 sm:pt-5 float-left pl-2 border-transparent rounded text-lg font-medium font-medium font-serif tracking-normal hover:text-blue-600 ${!isActive ? 'text-white' : "text-blue-400"}`}><span className='mr-2 text-2xl'><IoMdContact /></span> Sign In </NavLink>
       </div>
       <div className="w-full flex flex-col list-none justify-evenly items-start app-menu-items">
         <NavLink onClick={closeToggleSideNav} to="/" className={({ isActive }) => `xs:text-base flex justify-center items-center mx-1 border-2 border-transparent rounded  py-1 text-lg font-medium font-medium font-serif tracking-normal hover:text-blue-600 ${!isActive ? 'text-red-600' : "text-red-600"}`}><span className='mx-2'><FaHome /></span> Home </NavLink>

@@ -60,7 +60,7 @@ const SellingPage = () => {
       <section
         style={{ backgroundImage: `url('assets/chilli-red-pepper-flakes-chilli-powder-burst_662214-388440.jpg')` }}
         className="max-w-screen w-screen w-full mt-12 bg-cover bg-center flex justify-between xs:flex-col px-6 py-10 bg-white rounded-lg shadow-lg">
-        <div className='flex flex-col pr-16 xs:w-screen w-3/5'>
+        <div className='flex flex-col xs:pr-0 pr-16 xs:w-full w-3/5'>
           <h2 className="text-3xl font-semibold text-center text-white mb-6">Why Sell with Us?</h2>
           <div className="flex flex-col items-center justify-center gap-6">
             <div className="bg-white p-6 rounded-lg shadow-lg xs:w-full w-4/5 text-center">
@@ -77,7 +77,7 @@ const SellingPage = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col xs:w-full w-3/5 xs:mt-10 pr-16'>
+        <div className='flex flex-col xs:w-full xs:pr-0 w-3/5 xs:mt-10 pr-16'>
           <h2 className="text-3xl font-semibold text-center text-white mb-6">Sell Your Mirchi </h2>
           <form onSubmit={handleSubmit} className="">
             <div className="grid grid-cols-2 xs:grid-cols-1 xs:w-full gap-4">
@@ -87,7 +87,7 @@ const SellingPage = () => {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
-                className="p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
+                className="w-full py-3 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
                 required
               />
               <input
@@ -96,7 +96,7 @@ const SellingPage = () => {
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="xs:w-full p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
+                className="w-full py-3 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
 
                 required
               />
@@ -106,7 +106,7 @@ const SellingPage = () => {
                 placeholder="Phone Number"
                 value={formData.phone}
                 onChange={handleChange}
-                className=" p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
+                className="w-full py-3 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
 
                 required
               />
@@ -116,7 +116,7 @@ const SellingPage = () => {
                 placeholder="Chili Type (e.g., Guntur, Kashmiri)"
                 value={formData.chiliType}
                 onChange={handleChange}
-                className=" p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
+                className="w-full py-3 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
 
                 required
               />
@@ -126,7 +126,7 @@ const SellingPage = () => {
                 placeholder="Quantity (in kg)"
                 value={formData.quantity}
                 onChange={handleChange}
-                className=" p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
+                className="w-full py-3 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
 
                 required
               />
@@ -136,7 +136,7 @@ const SellingPage = () => {
                 placeholder="Price per kg (in ₹)"
                 value={formData.price}
                 onChange={handleChange}
-                className=" p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
+                className="w-full py-3 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
 
                 required
               />
@@ -146,7 +146,15 @@ const SellingPage = () => {
                 placeholder="Location (City, State)"
                 value={formData.location}
                 onChange={handleChange}
-                className=" p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
+                className="w-full py-2 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
+
+                required
+              />
+              <input
+                type="file"
+                name="image"
+                onChange={handleFileChange}
+                className="w-full py-2 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
 
                 required
               />
@@ -155,17 +163,9 @@ const SellingPage = () => {
                 placeholder="Description of your chili"
                 value={formData.description}
                 onChange={handleChange}
-                className="p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
+                className="w-full md:col-span-2  lg:col-span-2  xl:col-span-2 py-4 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
 
               ></textarea>
-              <input
-                type="file"
-                name="image"
-                onChange={handleFileChange}
-                className="p-4 border-2 hover:border-sky-600 focus:border-none hover:outline-2 hover:shadow-md hover:outline-sky-600 border-gray-500 rounded-lg"
-
-                required
-              />
             </div>
             <button
               type="submit"

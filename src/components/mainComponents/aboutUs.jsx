@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
-    <div className="xs:mx-4 sm:mx-4 mt-24">
+    <div className="xs:mx-4 sm:mx-4 mt-24 pt-8 px-6">
       <div className="flex flex-col lg:flex-row items-center lg:space-x-12">
         {/* Text Section */}
         <div className="lg:w-1/2 space-y-6">

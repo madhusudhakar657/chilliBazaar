@@ -5,9 +5,9 @@ const FooterContent = () => {
     <footer 
     style={{ backgroundImage: `url('/assets/footerFarmerImg.jpg'` }}
     className="bg-cover bg-center text-white py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="px-6 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* About Section */}
-        <div>
+        <div className=''>
           <h2 className="text-2xl font-semibold mb-4">About Chilli Bazaar</h2>
           <p className="text-gray-800">
             Chilli Bazaar is your one-stop online marketplace for premium dried red chilies. We connect farmers directly with buyers, ensuring quality, freshness, and fair prices. From home cooks to professional chefs, our platform provides a seamless experience for all chili lovers.
@@ -15,8 +15,8 @@ const FooterContent = () => {
         </div>
 
         {/* Quick Links */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
+        <div className='flex flex-col justify-center xs:items-start items-center'>
+          <h2 className="text-2xl pr-10 font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2">
             <li><a href="#about" className="text-gray-800 hover:text-white">About Us</a></li>
             <li><a href="#products" className="text-gray-800 hover:text-white">Our Products</a></li>
@@ -28,7 +28,7 @@ const FooterContent = () => {
         </div>
 
         {/* Customer Service */}
-        <div>
+        <div className=''>
           <h2 className="text-2xl font-semibold mb-4">Customer Service</h2>
           <ul className="space-y-2">
             <li><a href="#shipping" className="text-gray-800 hover:text-white">Shipping & Delivery</a></li>
@@ -40,7 +40,7 @@ const FooterContent = () => {
         </div>
       </div>
 
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+      <div className="px-6 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         {/* Seller Support */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">Sell on Chilli Bazaar</h2>
@@ -66,7 +66,7 @@ const FooterContent = () => {
         </div>
       </div>
 
-      <div className="container mx-auto border-t border-gray-700 mt-10 pt-6 text-center text-gray-800">
+      <div className="px-6 mx-auto border-t border-gray-700 mt-10 pt-6 text-center text-gray-800">
         {/* Terms and Policies */}
         <p className="mb-4">
           <a href="#terms" className="text-gray-800 hover:text-white">Terms of Service</a> | <a href="#privacy" className="text-gray-800 hover:text-white">Privacy Policy</a> | <a href="#cookies" className="text-gray-800 hover:text-white">Cookie Policy</a>

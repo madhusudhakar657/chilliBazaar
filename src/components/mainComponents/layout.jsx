@@ -15,6 +15,8 @@ import ContactPage from "./contact";
 import Header from "../semanticComponents/header";
 import SuppliersPage from "./suppliers";
 import { useEffect } from "react";
+import SearchPage from "./productComponent/searchPage";
+import ProductCard from "./productComponent/productsDetailsInfo";
 
 
 function Layout() {
@@ -30,11 +32,12 @@ function Layout() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/products/:id" element={<ProductCard />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/selling" element={<SellingPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/search" element={<SearchPage />} />
         <Route path="/supplier" element={<SuppliersPage />} />
         <Route path="/regions" element={<RegionsComponent />} />
         <Route path="*" element={<PageNotFound />} />

@@ -74,9 +74,10 @@ const HomePage = () => {
               }
             </div>
         </section> */}
-        <section style={{ backgroundImage: `url('assets/spice-smoked-paprika-form-powder-bowls-spoons_73989-34358.jpg')` }}
-          className="bg-cover bg-center bg-bottom w-full xs:px-4 sm:px-6 px-16 py-8 mb-12">
-          <h3 className="text-4xl xs:text-xl font-bold text-white pt-4 mb-6 text-center">Popular <strong className='text-red-600'>Dry Chilli</strong> Varieties Across India</h3>
+        <section 
+        // style={{ backgroundImage: `url('assets/juteBg.avif')` }}
+          className=" bg-cover bg-center bg-bottom w-full xs:px-4 sm:px-6 px-16 py-8 mb-12">
+          <h3 className="text-3xl xs:text-xl font-bold text-gray-700 pt-4 mb-10 text-center">Popular <strong className='text-red-600'>Dry Chilli</strong> Varieties Across India</h3>
           <div className="grid  xs:grid-cols-1 grid-cols-3 gap-6">
             {chilliTypes?.map(eachType => {
 

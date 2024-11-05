@@ -2,9 +2,9 @@ import React from 'react';
 
 const ContactPage = () => {
   return (
-    <div 
-    style={{backgroundImage:`url('assets/copy-space-chilli-peper_23-2148601208.jpg')`}}
-    className="w-screen bg-cover bg-center min-h-screen pt-24 xs:py-10 xs:mt-10 bg-none">
+    <div
+      style={{ backgroundImage: `url('assets/copy-space-chilli-peper_23-2148601208.jpg')` }}
+      className="w-screen bg-cover bg-center min-h-screen pt-24 xs:py-10 xs:mt-10 bg-none">
       <h2 className="text-4xl font-bold text-center text-white my-8">Contact Us</h2>
       <div className="px-12 grid lg:grid-cols-2 gap-5">
         {/* Contact Information */}
@@ -44,7 +44,7 @@ const ContactPage = () => {
                 <label className="block text-gray-700">Your Name</label>
                 <input
                   type="text"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-red-400"
+                  className="w-full py-2 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
                   placeholder="John Doe"
                 />
               </div>
@@ -52,7 +52,7 @@ const ContactPage = () => {
                 <label className="block text-gray-700">Your Email</label>
                 <input
                   type="email"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-red-400"
+                  className="w-full py-2 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
                   placeholder="john@example.com"
                 />
               </div>
@@ -62,7 +62,7 @@ const ContactPage = () => {
                 <label className="block text-gray-700">Phone Number</label>
                 <input
                   type="text"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-red-400"
+                  className="w-full py-2 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
                   placeholder="+91 1234567890"
                 />
               </div>
@@ -70,7 +70,7 @@ const ContactPage = () => {
                 <label className="block text-gray-700">Subject</label>
                 <input
                   type="text"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-red-400"
+                  className="w-full py-2 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
                   placeholder="Subject"
                 />
               </div>
@@ -78,7 +78,7 @@ const ContactPage = () => {
             <div>
               <label className="block text-gray-700">Your Message</label>
               <textarea
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-red-400"
+                className="w-full py-2 px-3 border-2 border-gray-200 shadow-sm rounded focus:outline-none focus:ring-red-500 focus:border-red-500 placeholder-gray-500 hover:border-blue-300 "
                 placeholder="Type your message here..."
                 rows="4"
               ></textarea>
