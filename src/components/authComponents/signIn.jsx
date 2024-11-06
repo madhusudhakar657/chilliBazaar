@@ -50,7 +50,7 @@ const LoginPage = () => {
 
   return (
     <>
-      <div style={{ backgroundImage: `url('public/assets/pile-pepper-pepper-chili-wooden-table_1049143-28188.jpg` }}
+      <div style={{ backgroundImage: `url('assets/pile-pepper-pepper-chili-wooden-table_1049143-28188.jpg` }}
         className="min-h-screen  bg-cover bg-center flex flex-col items-center justify-start  pt-24 rounded-md">
         <div className='py-10 text-white'>
           <h1 className='xs:text-2xl text-4xl text-center font-semibold'>🔥 Welcome to Chilli Bazaar! 🔥</h1>
